@@ -12,8 +12,8 @@ errorMessage.textContent = "";
 locationForm.addEventListener("submit", function (e) {
   successMessage.textContent = "loading...";
   e.preventDefault();
-  console.log("http://localhost:3000/weather?address=" + searchField.value);
-  fetch("http://localhost:3000/weather?address=" + searchField.value).then(
+  console.log("/weather?address=" + searchField.value);
+  fetch("/weather?address=" + searchField.value).then(
     (response) => {
       successMessage.textContent = "";
       errorMessage.textContent = "";
