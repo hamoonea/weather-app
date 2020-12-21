@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Welcome to weather app
+    </title>
+    <link href="style/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Welcome to the homepage</p>
+        <form>
+            <input type="text" id="searchField" placeholder="Location" />
+            <button type="submit">Search</button>
+        </form>
+
+        <p class="message1"></p>
+        <p class="message2"></p>
+    </div>
+    {{>footer}}
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
