@@ -5,6 +5,8 @@ const hbs = require("hbs");
 const geocode = require("./utils/geocode.js");
 const forcast = require("./utils/forcast.js");
 
+const port = process.env.PORT || 3000
+
 const app = express();
 
 const publicDirectory = path.join(__dirname, "../public");
@@ -78,6 +80,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen("3000", () => {
+app.listen("port", () => {
   console.log("Server started");
 });
