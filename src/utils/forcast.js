@@ -21,10 +21,14 @@ const forcast = (lat, long, callback) => {
         callback(
           undefined,
           "It is currently " +
+            body.current.weather_descriptions[0].toLowerCase() +
+            " and " +
             body.current.temperature +
             " degrees out. It feels like " +
             body.current.feelslike +
-            " degrees out."
+            " degrees out and the humidity is " +
+            body.current.humidity +
+            "."
         );
       }
     }
