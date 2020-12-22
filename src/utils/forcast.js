@@ -28,7 +28,7 @@ const forcast = (lat, long, callback) => {
             body.current.feelslike +
             " degrees out and the humidity is " +
             body.current.humidity +
-            "."
+            "%."
         );
       }
     }
